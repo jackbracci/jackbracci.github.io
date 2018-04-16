@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Jonathan Bracci Exam Page</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+       
+</head>
+
+<body>
+
+
+	
+	<header> Jonathan Bracci</header>
+
+
+
+     <div class="box">
+        <div class="a" id ='picfield'><img src="images/examPic.JPG" alt="Colleen Picture" ></div>
+        <div class="b" id = 'pText'><img src="images/UMSI-logo.jpg" alt="UMSI Logo" ></div>
+        
+    </div>
+
+
+<style>
+        #picfield {display:none;}
+    </style>
+    
+     <script type="text/javascript">
+        function togglepic(){
+        var picField = document.querySelector('#picfield');
+        var subscribe = document.querySelector('#subscribe');
+
+        if (subscribe.checked) {
+
+            picField.style.display = 'block';
+        } 
+        else{
+            picField.style.display = 'none';
+        }
+    } 
+    </script>
+
+
+            <div id="check">
+                <label>
+                    <input type="checkbox" name="subscribe" id="subscribe" onchange="togglepic()">
+            Check to Make Image Appear
+                </label>
+            </div>
+
+
+
+
+
+    </form>
+
+
+        <input type="button" value="Make Image Disappear" id="b1" onclick="changeText(this.value);"/>
+        <input type="button" value="Make Image Reappear" id="b2" onclick="changeText(this.value);"/>
+        
+
+ 
+   
+
+
+        
+</body>
+</html>
